@@ -1,0 +1,39 @@
+1;4205;0c# WARNING: For help understanding this file, and before you try
+# to change any of it, type "man .profile" and read carefully.
+r
+emacs ~/.profile
+
+#
+
+#
+# Set command search rules
+#
+if [ -x /bin/showpath ] ; then
+	export PATH; PATH=`/bin/showpath usedby=user standard $HOME/bin`
+#
+# Find out what kind of terminal we are using
+#
+	eval `setterm -x default:vt100`
+#
+# Set terminal-type dependent options (e.g. sysline or prompt string)
+#
+	#HOMEHOST="<hostname>"
+	#HOMEUSER="<userid>"
+	#export HOMEHOST HOMEUSER
+	PS1="`\setprompt`"
+#
+# Now do the usual signing on things
+#
+	export MAIL; MAIL=${MAIL-"/usr/spool/mail/$USER"}
+
+	if [ -r /software/.admin/bins/bin/read_system_news ] ; then /software/.admin/bins/bin/read_system_news ; fi
+fi
+
+export MAIL; MAIL=${MAIL-"/usr/spool/mail/$USER"}
+source "cs246/setup"
+alias g++14="g++5-5 -std=c++14"
+alias vi="vi -X"
+export EDITOR=vi
+alias marmoset="~/Marmoset"
+alias myprofile="vi ~/.profile"
+

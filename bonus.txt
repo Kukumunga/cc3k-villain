@@ -1,0 +1,15 @@
+BONUS:
+- Feridun ASCII art when you lose
+- Goose ASCII art when you win (THANK MR. GOOSE)
+- Win and GameOver ASCII art
+- No uses of delete, aka smart pointers were used
+- Cheat class
+	- type nomair to access cheat section
+	- type code 246 for to restore health
+	- type code 1171 for additional 25 def
+	- type code 42 for additional 25 atk
+
+        - type nomair to access cheat section
+        - type code 246 for to restore health
+        - type code 1171 for additional 25 def
+        - type code 42 for additional 25 atk
